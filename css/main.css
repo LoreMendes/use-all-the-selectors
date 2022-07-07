@@ -23,11 +23,11 @@ nav ul {
 }
 
 .wrapper {
-  background-color: #eee8d5
+  background-color: #eee8d5;
 }
 
 #contents, #favs, #facts, #types {
-  color: #93a1a1
+  color: #93a1a1;
 }
 
 .wrapper + .dfn {
@@ -39,19 +39,28 @@ nav ul {
 }
 
 a:not(.no-highlight) {
-  background-color: #719e07
+  background-color: #719e07;
+}
+[rel="external"] {
+  background-color: #2694d8;
 }
 
+ol li:first-child {
+  color: #719e47;
+}
 
-Select the link with rel="external" attribute
-— add background-color: #2694d8;
-Select the first li inside the ol
-— add color: #719e47;
-Select the last li inside the ol
-— add color: #2aa198;
-Select every odd li inside .types
-— add background-color: #657ba3;
-Select every even li inside .types
-— add background-color: #586e75;
-Select every 3rd li inside .types
-— add background-color: #d04b16;
+ol li:last-child {
+color: #2aa198;
+}
+
+.types + li:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+.types + li:nth-child(even) {
+  background-color: #586e75;
+}
+
+.types + li:nth-child(3,6,9,12,15) {
+  background-color: #d04b16;
+}
