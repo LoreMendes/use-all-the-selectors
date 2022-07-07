@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fdf6e3
+}
+
+header, footer {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  font-family: sans-serif;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background-color: #eee8d5
+}
+
+#contents, #favs, #facts, #types {
+  color: #93a1a1
+}
+
+.wrapper + .dfn {
+  background-color: #b58900;
+}
+
+.dfn + strong {
+  color: #fff;
+}
+
+a:not(.no-highlight) {
+  background-color: #719e07
+}
+
+
+Select the link with rel="external" attribute
+— add background-color: #2694d8;
+Select the first li inside the ol
+— add color: #719e47;
+Select the last li inside the ol
+— add color: #2aa198;
+Select every odd li inside .types
+— add background-color: #657ba3;
+Select every even li inside .types
+— add background-color: #586e75;
+Select every 3rd li inside .types
+— add background-color: #d04b16;
