@@ -61,6 +61,6 @@ color: #2aa198;
   background-color: #586e75;
 }
 
-.types + li:nth-child(3,6,9,12,15) {
+.types + li:nth-child(3n) {
   background-color: #d04b16;
 }
